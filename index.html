@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-container">
+        <label class="switch">
+            <input onchange="switchChange()" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+    </div>
+    <div class="time analog" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);display: none">
+        <h1 style="position: absolute;top: -8%;right: 25%;">1</h1>
+        <h1 style="position: absolute;top: 10%;right: 16%;">2</h1>
+        <h1 style="position: absolute;top: 31%;right: 10%;">3</h1>
+        <h1 style="position: absolute;top: 55%;right: 16%;">4</h1>
+        <h1 style="position: absolute;top: 65%;right: 25%;">5</h1>
+        <h1 style="position: absolute;top: 70%;right: 43%;">6</h1>
+        <h1 style="position: absolute;top: 65%;right: 62%;">7</h1>
+        <h1 style="position: absolute;top: 55%;right: 80%;">8</h1>
+        <h1 style="position: absolute;top: 31%;right: 84%;">9</h1>
+        <h1 style="position: absolute;top: 10%;right: 73%;">10</h1>
+        <h1 style="position: absolute;top: -8%;right: 62%;">11</h1>
+        <h1 style="position: absolute;top: -8%;right: 43%;">12</h1>
+        <div class="middle-dot"></div>
+        <div class="secondsNeedle">
+            <div class="line" style="width:10vw;clip-path:polygon(186% 5px, 4% -165px, 51% 92%, 0 33%);position: relative;top:10px"></div>
+        </div>
+        <div class="hoursNeedle">
+            <div class="line" style="width:10vw;clip-path:polygon(186% 5px, 4% -165px, 51% 92%, 0 33%);"></div>
+        </div>
+        <div class="minutesNeedle">
+            <div class="line" style="width:11vw;clip-path:polygon(186% 5px, 4% -165px, 51% 92%, 0 33%);position: relative;bottom:10px"></div>
+        </div>
+    </div>
+    <div class="rectangular-box digital">
+        <div class="time">
+            <span class="hours"></span>
+            <span>:</span>
+            <span class="minutes"></span>
+            <span>:</span>
+            <span class="seconds"></span>
+            <span class="ampm"></span>
+        </div>
+    </div>
+    <h1 id="1"></h1>
+    <h1 id="2"></h1>
+    <h1 id="3"></h1>
+</body>
+<script src="/script.js"></script>
+</html>
